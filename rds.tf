@@ -6,7 +6,7 @@ subnet_ids = ["${aws_subnet.private_subnet1.id}", "${aws_subnet.private_subnet2.
 
 # aws_db_instance.db:
 resource "aws_db_instance" "db" {
-    availability_zone                     = "ap-south-1a"
+    availability_zone                     = "eu-west-3a"
     db_subnet_group_name                  = aws_db_subnet_group.db_subnet.name
     engine                                = "mysql"
     engine_version                        = "8.0.27"

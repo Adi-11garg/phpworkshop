@@ -32,8 +32,8 @@ resource "aws_autoscaling_group" "as_group" {
 # aws_launch_template.launch_template:
 resource "aws_launch_template" "launch_template" {
     default_version         = 1
-    image_id                = "ami-011a9944eb4abcf55"  
-    # image_id                = "ami-0b6d5b94fb02d2192"
+    image_id                = "ami-0f4910032868877b9"  
+    
     instance_type           = "t2.micro"
     name_prefix   = "project"
 

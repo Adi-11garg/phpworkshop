@@ -227,36 +227,36 @@ resource "aws_autoscaling_group" "example" {
     Create Amazon AMI from it in the region you want to use it
 
 # How to configure wordpress with nginx �:
-To install the nginx package, use the default package manager as follows:
-Confirm that the Nginx service is up and enabled on boot using the following systemctl commands.
-Open a web browser and use the following address to navigate. (http://YOUR_SERVER_IP)
-Installing Mysql Database on Ubuntu 20.04
-Confirm that the Mysql database service is running and is enabled to automatically start when your system is restarted.
-You need to enable some basic security measures for the Mysql database installation, by running the mysql_secure_installation script which ships with the Mysql package.
-To access the Mysql shell, run the mysql command with the -u option with sudo.
-Installing PHP in Ubuntu 20.04
-After finding the extension, you can install it. For example, I am installing PHP modules for Redis in-memory cache and Zip compression tool.
-After installing PHP extension, you need to restart nginx to apply recent changes.
-Next, test if Nginxis working in conjunction with PHP. Create an info.php page under the web document root /var/www/html/ directory as shown.
-Copy and paste the following code in the file, then save the file and exit it. 
-   <?php
+1.To install the nginx package, use the default package manager as follows:/
+2.Confirm that the Nginx service is up and enabled on boot using the following systemctl commands./
+3.Open a web browser and use the following address to navigate. (http://YOUR_SERVER_IP)/
+4.Installing Mysql Database on Ubuntu 20.04/
+5.Confirm that the Mysql database service is running and is enabled to automatically start when your system is restarted./
+6.You need to enable some basic security measures for the Mysql database installation, by running the mysql_secure_installation script which ships with the Mysql package./
+7.To access the Mysql shell, run the mysql command with the -u option with sudo./
+8.Installing PHP in Ubuntu 20.04/
+9.After finding the extension, you can install it. For example, I am installing PHP modules for Redis in-memory cache and Zip compression tool./
+10.After installing PHP extension, you need to restart nginx to apply recent changes./
+11.Next, test if Nginxis working in conjunction with PHP. Create an info.php page under the web document root /var/www/html/ directory as shown./
+12.Copy and paste the following code in the file, then save the file and exit it. 
+     <?php
         phpinfo();
-   ?>
-open a web browser and navigate using the following address.
+     ?>
+13.open a web browser and navigate using the following address.
 
       http://YOUR_SERVER_IP/info.php
 
-Installing PhpMyAdmin in Ubuntu 20.04
-To configure a database for PhpMyAdmin with the dbconfig-common package, select yes in the next prompt.
-Next, create a password for PhpMyAdmin to register with the Mysql database server.
-In a browser go to http://SERVER_IP/phpmyadmin, replacing SERVER_IP with the server’s actual IP address.
-After installing lemp you can download the latest version of wordpress.
-Once the download is complete, extract the archived file using the tar command as shown.
-Next, move the extracted WordPress directory into your document root i.e. /var/www/html/ and under your website as shown (replace mysite.com with your website’s name or domain name). The following command will create a mysite.com directory and move WordPress files under it.
-Now set appropriate permissions on the website (/var/www/html/mysite.com) directory. It should be owned by the Nginx user and group called www-data.
-Creating a WordPress Database for Website.
-Creating Nginx VirtualHost for WordPress Website
-Completing the WordPress Installation via Web Interface.
+14.Installing PhpMyAdmin in Ubuntu 20.04/
+15.To configure a database for PhpMyAdmin with the dbconfig-common package, select yes in the next prompt./
+16.Next, create a password for PhpMyAdmin to register with the Mysql database server./
+17.In a browser go to http://SERVER_IP/phpmyadmin, replacing SERVER_IP with the server’s actual IP address./
+18.After installing lemp you can download the latest version of wordpress./
+19.Once the download is complete, extract the archived file using the tar command as shown./
+20.Next, move the extracted WordPress directory into your document root i.e. /var/www/html/ and under your website as shown (replace mysite.com with your website’s name or domain name). The following command will create a mysite.com directory and move WordPress files under it./
+21.Now set appropriate permissions on the website (/var/www/html/mysite.com) directory. It should be owned by the Nginx user and group called www-data./
+22.Creating a WordPress Database for Website./
+23.Creating Nginx VirtualHost for WordPress Website/
+24.Completing the WordPress Installation via Web Interface./
 
 
 # Jenkins Instance Setup
@@ -269,13 +269,13 @@ Completing the WordPress Installation via Web Interface.
     Create aws role and attach with ami to access aws services
 
 # Paste that custom ami id in terraform instances and then push the code on Git by following commands:
-git init
-git add .
-git commit -m "msg"
-git status
-git remote add origin <repo link>
-git remote -v
-git push -u origin <branch name>  
+1.git init//
+2.git add .//
+3.git commit -m "msg"//
+4.git status//
+5.git remote add origin <repo link>//
+6.git remote -v//
+7.git push -u origin <branch name>  //
   
 # GitHub Setup
 
